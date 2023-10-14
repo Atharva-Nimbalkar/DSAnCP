@@ -23,16 +23,26 @@ public class ArrayListExamples5 {
 
         Scanner input=new Scanner(System.in);
 
-        //input
+        //input  tc: O(1)
         for(int i=0;i<5;i++){
             arr.add(input.nextInt());
         }
 
-//        get item at  any index
+//        get item at  any index  tc: O(1)
         for(int i=0;i<5;i++){
             System.out.println(arr.get(i));//pass index here,arr[index] syntax will not work here
         }
 
         System.out.println(arr);
+
+        //remove  tc: O(N)
+        arr.remove(2);
+        System.out.println(arr);
+
+        //set  tc: O(N)
+        arr.set(2,100);
+
+//       tc: O(N)
+        arr.contains(4);
     }
 }
